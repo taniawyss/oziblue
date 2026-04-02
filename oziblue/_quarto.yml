@@ -10,6 +10,8 @@ website:
       - href: rencontre.qmd
         text: Rencontre de dessin
       - about.qmd
+#      - href: dessin_naturaliste.qmd
+#        text: Dessin naturaliste      
 
 format:
   html:

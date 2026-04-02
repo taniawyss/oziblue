@@ -8,7 +8,8 @@ title: "Rencontre de dessin en plein air"
 
 Avez-vous envie de vous déconnecter de l'agitation de la vie quotidienne et de vous reconnecter à la nature? Avez-vous envie de renforcer et stimuler votre créativité ?
 
-REJOIGNEZ-NOUS le **26 avril 2026 à Savigny (CH-1073)**, pour un après-midi dédié à l'observation et à la contemplation de la nature par le dessin et l'activité créative. Nous proposons une rencontre de dessin en plein air, ouverte à toutes et à tous: débutant(e)s ou expert(e)s en dessin ou en peinture, enfants et adultes !
+<!-- le **26 avril 2026 à Savigny (CH-1073)** -->
+REJOIGNEZ-NOUS pour un après-midi dédié à l'observation et à la contemplation de la nature par le dessin et l'activité créative. Nous proposons une rencontre de dessin en plein air, ouverte à toutes et à tous: débutant(e)s ou expert(e)s en dessin ou en peinture, enfants et adultes !
 
 Vous pensez ne pas savoir dessiner ? Cela n'a pas d'importance ! L'objectif de la rencontre n'est pas de réaliser une oeuvre d'art, mais de profiter de l'instant présent, d'observer et de contempler la nature par le dessin, et de se concentrer sur le processus plutôt que sur le résultat.
 
@@ -26,22 +27,22 @@ Une courte introduction de 15 minutes sur le sujet (technique et but) du dessin 
 
 ## Horaire et lieu
 
-Le dimanche **26 avril 2026** de 14 heures à 17 heures.
+<!-- Le dimanche **26 avril 2026** de 14 heures à 17 heures. -->
 
-Près du ruissau entre [Route de Saint-Amour 16 & 18, CH-1073 Savigny](https://maps.app.goo.gl/ZixNXFDWJJVRs91s5) (mise à jour en fonction de la météo le 19 avril 2026).
+<!-- Près du ruissau entre [Route de Saint-Amour 16 & 18, CH-1073 Savigny](https://maps.app.goo.gl/ZixNXFDWJJVRs91s5) (mise à jour en fonction de la météo le 19 avril 2026). -->
 
 ::: callout-important
 ### Attention !
 
 En cas de très mauvais temps, le lieu sera adapté ou la date reportée.
 
-Confirmation du lieu le 19 avril 2026.
+<!-- Confirmation du lieu le 19 avril 2026. -->
 :::
 
 **Accès**
 
--   Automobile: Il n'y a pas de parking à proximité. Veuillez parquer la voiture à la [Place du Forum](https://maps.app.goo.gl/P7owwkR2YqP9yrod8) ou autres places publiques disponibles autour du [rond-point au centre de Savigny](https://maps.app.goo.gl/cCfnsJRcXdmUcsxU8), qui se trouve à 10 minutes à pieds du point de rencontre.\
--   Transport public: Le point de rencontre se trouve à 10 minutes à pieds de l'arrêt de bus **Savigny, centre** (Car Postal, [ligne 360 et 365](https://www.postauto.ch/-/media/postauto/fahrplan-und-netz/liniennetz/dokumente/waadt/liniennetz-jorat-25-26.pdf?vs=5)) ou **Palaz** (Car Postal, [ligne 360](https://www.postauto.ch/-/media/postauto/fahrplan-und-netz/liniennetz/dokumente/waadt/liniennetz-jorat-25-26.pdf?vs=5)).
+<!-- -   Automobile: Il n'y a pas de parking à proximité. Veuillez parquer la voiture à la [Place du Forum](https://maps.app.goo.gl/P7owwkR2YqP9yrod8) ou autres places publiques disponibles autour du [rond-point au centre de Savigny](https://maps.app.goo.gl/cCfnsJRcXdmUcsxU8), qui se trouve à 10 minutes à pieds du point de rencontre.\ -->
+<!-- -   Transport public: Le point de rencontre se trouve à 10 minutes à pieds de l'arrêt de bus **Savigny, centre** (Car Postal, [ligne 360 et 365](https://www.postauto.ch/-/media/postauto/fahrplan-und-netz/liniennetz/dokumente/waadt/liniennetz-jorat-25-26.pdf?vs=5)) ou **Palaz** (Car Postal, [ligne 360](https://www.postauto.ch/-/media/postauto/fahrplan-und-netz/liniennetz/dokumente/waadt/liniennetz-jorat-25-26.pdf?vs=5)). -->
 
 ## Matériel à emporter
 
@@ -103,6 +104,7 @@ La rencontre est gratuite ! Vous pourrez toutefois soutenir les organisatrices e
 -   Livre de Clare Walker Leslie, en français: [Journal du naturaliste](https://www.payot.ch/Detail/journal_du_naturaliste-clare_walker_leslie__edward_o_wilson-9782017161363). \
 -   International Nature Journaling week, en anglais: <https://www.naturejournalingweek.com/>.\
 -   Clare Walker Leslie, instigatrice du "nature journaling" aux Etats-Unis, en anglais : <https://www.clarewalkerleslie.com/>.\
+- Idées de dessin ("daily nature journaling prompts") pour chaque jour de l'année, en anglais:  [https://www.wildwonder.org/nj25](https://www.wildwonder.org/nj25).\
 -   Canal Youtube "Journaling with Nature", en anglais : [https://www.youtube.com/\@journalingwithnature](https://www.youtube.com/@journalingwithnature).\
 -   Alex Boon, peintre naturaliste: *Qu'est-ce que le dessin naturaliste?*, en anglais: <https://alexboonart.com/nature-journaling/>.\
 
