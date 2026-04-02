@@ -8,7 +8,7 @@ website:
 #      - href: festival.qmd
 #        text: Home
       - href: festival.qmd
-        text: Festival
+        text: Rencontre de dessin
       - about.qmd
 
 format:

@@ -2,8 +2,10 @@
 title: "A propos"
 ---
 
-Contact
+# Contact
 
-<!-- tanja_wyss[@]hotmail.com -->
+tanja_wyss[@]hotmail.com
+
+
 
 <!-- +41 76 339 7663 -->

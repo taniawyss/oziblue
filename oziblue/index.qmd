@@ -6,5 +6,5 @@ Bienvenue sur Oziblue!
 
 <!-- embed blue bird painting -->
 
-Retrouvez ici des informations sur le [Festival du dessin en plein air](festival.qmd).
+Retrouvez ici des informations sur la [Rencontre de dessin en plein air](festival.qmd).
 <!-- et des oeuvres naturalistes créées par une passionée de l'aquarelle.   -->
