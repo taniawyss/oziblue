@@ -7,7 +7,7 @@ website:
     left:
 #      - href: festival.qmd
 #        text: Home
-      - href: festival.qmd
+      - href: rencontre.qmd
         text: Rencontre de dessin
       - about.qmd
 
