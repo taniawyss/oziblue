@@ -4,13 +4,15 @@ title: "Rencontre de dessin en plein air"
 
 <!-- ## Rencontre de dessin en plein air -->
 
+![Tilleul de Savigny en hiver](images/lindenbaum_2026_small.jpg){width=60% fig-align="center"}
+
 Avez-vous envie de vous déconnecter de l'agitation de la vie quotidienne et de vous reconnecter à la nature? Avez-vous envie de renforcer et stimuler votre créativité ?
 
 REJOIGNEZ-NOUS le **26 avril 2026 à Savigny (CH-1073)**, pour un après-midi dédié à l'observation et à la contemplation de la nature par le dessin et l'activité créative. Nous proposons une rencontre de dessin en plein air, ouverte à toutes et à tous: débutant(e)s ou expert(e)s en dessin ou en peinture, enfants et adultes !
 
 Vous pensez ne pas savoir dessiner ? Cela n'a pas d'importance ! L'objectif de la rencontre n'est pas de réaliser une oeuvre d'art, mais de profiter de l'instant présent, d'observer et de contempler la nature par le dessin, et de se concentrer sur le processus plutôt que sur le résultat.
 
-Une courte introduction de 15 minutes sur le sujet (technique et but) du dessin en plein air sera donnée à 14 heures, en début de rencontre. <!-- (retrouvez l'introduction ici). -->
+Une courte introduction de 15 minutes sur le sujet (technique et but) du dessin naturaliste en plein air sera donnée à 14 heures, en début de rencontre. <!-- (retrouvez l'introduction ici). -->
 
 *Nous nous réjouisson de vous voir nombreux!*
 
@@ -102,4 +104,9 @@ La rencontre est gratuite ! Vous pourrez toutefois soutenir les organisatrices e
 -   International Nature Journaling week, en anglais: <https://www.naturejournalingweek.com/>.\
 -   Clare Walker Leslie, instigatrice du "nature journaling" aux Etats-Unis, en anglais : <https://www.clarewalkerleslie.com/>.\
 -   Canal Youtube "Journaling with Nature", en anglais : [https://www.youtube.com/\@journalingwithnature](https://www.youtube.com/@journalingwithnature).\
--   Alex Boon, peintre naturaliste: *Qu'est-ce que le dessin naturaliste?*, en anglais: <https://alexboonart.com/nature-journaling/>. 
+-   Alex Boon, peintre naturaliste: *Qu'est-ce que le dessin naturaliste?*, en anglais: <https://alexboonart.com/nature-journaling/>.\
+
+<br>
+  
+
+![Feuilles de ginkgo](images/ginkgo_cropped.jpg){width=20% fig-align="center"}
