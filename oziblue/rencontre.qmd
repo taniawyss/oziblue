@@ -4,12 +4,12 @@ title: "Rencontre de dessin en plein air"
 
 <!-- ## Rencontre de dessin en plein air -->
 
-![Le tilleul devant l'Eglise en hiver](images/lindenbaum_2026_small.jpg){width=60% fig-align="center"}
+
+![Le pissenlit](images/pissenlit_carnet_small2.jpg){width="40%" fig-align="center"}
 
 Avez-vous envie de vous déconnecter de l'agitation de la vie quotidienne et de vous reconnecter à la nature? Avez-vous envie de renforcer et stimuler votre créativité ?
 
-<!-- le **26 avril 2026 à Savigny (CH-1073)** -->
-REJOIGNEZ-NOUS pour un après-midi dédié à l'observation et à la contemplation de la nature par le dessin et l'activité créative. Nous proposons une rencontre de dessin en plein air, ouverte à toutes et à tous: débutant(e)s ou expert(e)s en dessin ou en peinture, enfants et adultes !
+REJOIGNEZ-NOUS le **26 avril 2026 à Savigny (CH-1073)** pour un après-midi dédié à l'observation et à la contemplation de la nature par le dessin et l'activité créative. Nous proposons une rencontre de dessin en plein air, ouverte à toutes et à tous: débutant(e)s ou expert(e)s en dessin ou en peinture, enfants et adultes !
 
 Vous pensez ne pas savoir dessiner ? Cela n'a pas d'importance ! L'objectif de la rencontre n'est pas de réaliser une oeuvre d'art, mais de profiter de l'instant présent, d'observer et de contempler la nature par le dessin, et de se concentrer sur le processus plutôt que sur le résultat.
 
@@ -27,8 +27,9 @@ Une courte introduction de 15 minutes sur le sujet (technique et but) du dessin 
 
 ## Horaire et lieu
 
-<!-- Le dimanche **26 avril 2026** de 14 heures à 17 heures. -->
+Le dimanche **26 avril 2026** de 14 heures à 17 heures.
 
+[Route de Pré la Pierre 5, CH-1073 Savigny](https://maps.app.goo.gl/kFtYFn3LAFrFh4cz7).
 <!-- Près du ruissau entre [Route de Saint-Amour 16 & 18, CH-1073 Savigny](https://maps.app.goo.gl/ZixNXFDWJJVRs91s5) (mise à jour en fonction de la météo le 19 avril 2026). -->
 
 ::: callout-important
@@ -41,23 +42,24 @@ En cas de très mauvais temps, le lieu sera adapté ou la date reportée.
 
 **Accès**
 
-<!-- -   Automobile: Il n'y a pas de parking à proximité. Veuillez parquer la voiture à la [Place du Forum](https://maps.app.goo.gl/P7owwkR2YqP9yrod8) ou autres places publiques disponibles autour du [rond-point au centre de Savigny](https://maps.app.goo.gl/cCfnsJRcXdmUcsxU8), qui se trouve à 10 minutes à pieds du point de rencontre.\ -->
-<!-- -   Transport public: Le point de rencontre se trouve à 10 minutes à pieds de l'arrêt de bus **Savigny, centre** (Car Postal, [ligne 360 et 365](https://www.postauto.ch/-/media/postauto/fahrplan-und-netz/liniennetz/dokumente/waadt/liniennetz-jorat-25-26.pdf?vs=5)) ou **Palaz** (Car Postal, [ligne 360](https://www.postauto.ch/-/media/postauto/fahrplan-und-netz/liniennetz/dokumente/waadt/liniennetz-jorat-25-26.pdf?vs=5)). -->
+-   Automobile: Il n'y a pas de parking à proximité. Veuillez parquer la voiture à la [Place du Forum](https://maps.app.goo.gl/P7owwkR2YqP9yrod8) ou autres places publiques disponibles autour du [rond-point au centre de Savigny](https://maps.app.goo.gl/cCfnsJRcXdmUcsxU8), qui se trouve à 10 minutes à pieds du point de rencontre.\
+
+-   Transport public: Le point de rencontre se trouve à 2 minutes à pieds de l'arrêt de bus **Savigny, Palaz** (Car Postal, [ligne 360](https://www.postauto.ch/-/media/postauto/fahrplan-und-netz/liniennetz/dokumente/waadt/liniennetz-jorat-25-26.pdf?vs=5)).
 
 ## Matériel à emporter
 
-*Très fortement recommendé* \
-\* Une gourde d'eau et un snack.\
+*Très fortement recommendé*\
+<!-- \* Une gourde d'eau et un snack.\ -->
 \* Protection solaire (chapeau et crème solaire).\
 \* Vêtements et chaussures adaptés à la [météo du jour](https://www.meteosuisse.admin.ch/previsions-locales/savigny/1073.html#forecast-tab=detail-view) et à la campagne.\
 \* Protection anti-tiques.\
-\* Une chaise ou un tabouret de camping, pliable et/ou facile à transporter.
+<!-- \* Une chaise ou un tabouret de camping, pliable et/ou facile à transporter. -->
 
-*Optionnel* \
+*Optionnel*\
 \* Du matérial de dessin: un simple carnet à feuilles blanches ou des feuilles d'imprimante et un crayon peuvent suffire.\
 \* Un sous-main.
 
-Les personnes qui ne disposent pas de matériel de dessin en trouveront à disposition lors de la rencontre. Merci de nous indiquer si vous en avez besoin lors de l'[inscription](#inscription).
+<!-- Les personnes qui ne disposent pas de matériel de dessin en trouveront à disposition lors de la rencontre. Merci de nous indiquer si vous en avez besoin lors de l'[inscription](#inscription). -->
 
 Le matériel suivant sera mis à disposition gratuitement pour toutes et tous :\
 \* Feuilles de papier blanc.\
@@ -67,31 +69,39 @@ Le matériel suivant sera mis à disposition gratuitement pour toutes et tous :\
 \* [Aquarelles](https://www.royaltalens.com/collections/van-gogh-watercolours) de plusieurs couleurs et [pinceaux à réservoir d'eau](https://www.carandache.com/ch/fr/pinceaux-estompes/pinceau-a-reservoir-d-eau-pointe-large-p-10404.htm).\
 \* [Stylos fins noirs](https://www.sakuraofamerica.com/product/pigma-micron/).\
 \* Stylos à encre aquarellable (["brush pens"](https://www.tomboweurope.com/en/products/product/ABT-N15)).\
-\* Carnet d'aquarelles [Viviva](https://vivivacolors.com/?srsltid=AfmBOorN2mL3UkbvAUi4skEfhkill2bmgtrm3LTf9sz75xUbOHojuioF).\
+<!-- \* Carnet d'aquarelles [Viviva](https://vivivacolors.com/?srsltid=AfmBOorN2mL3UkbvAUi4skEfhkill2bmgtrm3LTf9sz75xUbOHojuioF).\ -->
 
 Les personnes qui souhaitent partager leur matériel avec d'autres sont évidemment encouragées à le faire et nous les en remercions vivement!
 
 ## Inscription {#inscription}
 
-Pour des raisons d'organisation, merci d'annoncer votre présence : [**INSCRIPTION**](https://docs.google.com/forms/d/e/1FAIpQLSekjcZ-RsDnvpxy7RFGSQn6LO9ykcjZgGDtiFlLdgQGsLnK0w/viewform?usp=publish-editor). 
+<!-- Pour des raisons d'organisation, merci d'annoncer votre présence : [**INSCRIPTION**](https://docs.google.com/forms/d/e/1FAIpQLSekjcZ-RsDnvpxy7RFGSQn6LO9ykcjZgGDtiFlLdgQGsLnK0w/viewform?usp=publish-editor). -->
 
 Vous pouvez simplement venir à l'heure qui vous convient le jour de la rencontre, et rester autant de temps que vous le désirez. Nous serons présents pour vous guider et partager un moment artistique en plein air.
 
-Si vous n'avez pas de matériel de dessin, merci de l'indiquer lors de l'inscription, pour nous permettre de planifier au mieux les besoins en matériel pour tout le monde.
+<!-- Si vous n'avez pas de matériel de dessin, merci de l'indiquer lors de l'inscription, pour nous permettre de planifier au mieux les besoins en matériel pour tout le monde. -->
 
 <!-- Pour être informé(e) des dernières mises à jour, rejoignez le [groupe WhatsApp ici](). -->
 
-La rencontre est gratuite ! Vous pourrez toutefois soutenir les organisatrices en achetant l'une des cartes de voeux proposées lors de l'événement.
+<!-- La rencontre est gratuite ! Vous pourrez toutefois soutenir les organisatrices en achetant l'une des cartes de voeux proposées lors de l'événement. -->
 
-## Réglement/charte
+## Charte
 
 -   Je respecte la nature et le lieu : pas besoin d'arracher les plantes à outrance pour les dessiner. Je ramasse mes déchets.
 -   Je ne me moque pas et je ne critique pas négativement les dessins des autres. Nous nous encouragons mutuellement.\
 -   Je ne m'auto-critique pas et j'ai un regard bienveillant sur mes propores créations.\
--   Les enfants de tous âges sont les bienvenus, mais sous la responsabilité de leur(s) parent(s) ou d'une personne responsable. Les enfants peuvent aussi venir seuls mais ils doivent savoir s'autogérer; la rencontre ne fait pas office de service de garde.\
+<!-- -   Les enfants de tous âges sont les bienvenus, mais sous la responsabilité de leur(s) parent(s) ou d'une personne responsable. Les enfants peuvent aussi venir seuls mais ils doivent savoir s'autogérer; la rencontre ne fait pas office de service de garde.\ -->
 -   J'emporte mes dessins avec moi lorsque je pars, mais je rends le matériel qui m'a été prêté.
 
-<!-- ## Exemples de dessins et peintures réalisés en plein air -->
+## Exemples de dessins réalisés en plein air
+
+
+![Le cerisier d'A., 11 ans](images/arbre_pandis_small.jpg){width="30%" fig-align="center"}
+
+![La glycine](images/glycine_carnet_small.jpg){width="40%" fig-align="center"}
+
+
+![Le tilleul en hiver](images/lindenbaum_2026_small.jpg){width="40%" fig-align="center"}
 
 <!-- ## Votre opinion sur la rencontre -->
 
@@ -100,15 +110,14 @@ La rencontre est gratuite ! Vous pourrez toutefois soutenir les organisatrices e
 ## Liens intéressants
 
 -   Petit guide d'introduction au dessin naturaliste en plein air de la Wild Wonder Foundation, en français: <https://www.wildwonder.org/store/p/nj-zine-french>.\
--   Blog sur la pratique de journal de la nature, en français: <https://blog.ontarioparks.ca/fr/journal-de-la-nature-difficile-de-ne-pas-etre-inspire/>. 
--   Livre de Clare Walker Leslie, en français: [Journal du naturaliste](https://www.payot.ch/Detail/journal_du_naturaliste-clare_walker_leslie__edward_o_wilson-9782017161363). \
+-   Blog sur la pratique de journal de la nature, en français: <https://blog.ontarioparks.ca/fr/journal-de-la-nature-difficile-de-ne-pas-etre-inspire/>.
+-   Livre de Clare Walker Leslie, en français: [Journal du naturaliste](https://www.payot.ch/Detail/journal_du_naturaliste-clare_walker_leslie__edward_o_wilson-9782017161363).\
 -   International Nature Journaling week, en anglais: <https://www.naturejournalingweek.com/>.\
 -   Clare Walker Leslie, instigatrice du "nature journaling" aux Etats-Unis, en anglais : <https://www.clarewalkerleslie.com/>.\
-- Idées de dessin ("daily nature journaling prompts") pour chaque jour de l'année, en anglais:  [https://www.wildwonder.org/nj25](https://www.wildwonder.org/nj25).\
+-   Idées de dessin ("daily nature journaling prompts") pour chaque jour de l'année, en anglais: <https://www.wildwonder.org/nj25>.\
 -   Canal Youtube "Journaling with Nature", en anglais : [https://www.youtube.com/\@journalingwithnature](https://www.youtube.com/@journalingwithnature).\
 -   Alex Boon, peintre naturaliste: *Qu'est-ce que le dessin naturaliste?*, en anglais: <https://alexboonart.com/nature-journaling/>.\
 
 <br>
-  
 
-![Feuilles de ginkgo](images/ginkgo_cropped.jpg){width=20% fig-align="center"}
+

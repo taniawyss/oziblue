@@ -8,3 +8,6 @@ Bienvenue sur Oziblue!
 
 Retrouvez ici des informations sur la [Rencontre de dessin en plein air](rencontre.qmd).
 <!-- et des oeuvres naturalistes créées par une passionée de l'aquarelle.   -->
+
+![Feuilles de ginkgo](images/ginkgo_cropped.jpg){width="20%" fig-align="center"}
+
