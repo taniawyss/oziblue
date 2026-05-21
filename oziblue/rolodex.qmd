@@ -3,6 +3,7 @@ title: "Rolodex"
 format:
   html:
     page-layout: full
+    embed-resources: false
     resources:
       - rolodex/data/liste_recettes.xlsx
       - rolodex/data/creative_ideas.xlsx
