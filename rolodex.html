@@ -98,12 +98,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Rencontre de dessin</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">A propos</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./rolodex.html" aria-current="page"> 
 <span class="menu-text">Rolodex</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">A propos</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -212,8 +212,8 @@ server &lt;- function(input, output, session) {
   
   # -------------------- LOAD DATA --------------------
   # In Shinylive, files must be fetched over HTTP into the Wasm virtual filesystem
-  download.file("rolodex/data/liste_recettes.xlsx", "liste_recettes.xlsx")
-  download.file("rolodex/data/creative_ideas.xlsx", "creative_ideas.xlsx")
+  download.file("https://www.oziblue.com/liste_recettes.xlsx", "liste_recettes.xlsx")
+  download.file("https://www.oziblue.com/creative_ideas.xlsx", "creative_ideas.xlsx")
   
   recipes &lt;- read_xlsx("liste_recettes.xlsx")
   ideas   &lt;- read_xlsx("creative_ideas.xlsx")
@@ -260,9 +260,9 @@ server &lt;- function(input, output, session) {
   # Add or remove filenames if your www/images/ folder changes.
   get_image &lt;- reactive({
     c(
-      "rolodex/www/images/016.JPG",
-      "rolodex/www/images/Hand-Colored-Engraving-Of-A-Peony.jpg",
-      "rolodex/www/images/butterflies_merian.png"
+      "https://www.oziblue.com/016.JPG",
+      "https://www.oziblue.com/Hand-Colored-Engraving-Of-A-Peony.jpg",
+      "https://www.oziblue.com/butterflies_merian.png"
     )
   })
   
