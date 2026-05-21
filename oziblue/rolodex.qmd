@@ -81,8 +81,8 @@ server <- function(input, output, session) {
   
   # -------------------- LOAD DATA --------------------
   # In Shinylive, files must be fetched over HTTP into the Wasm virtual filesystem
-  download.file("rolodex/data/liste_recettes.xlsx", "liste_recettes.xlsx")
-  download.file("rolodex/data/creative_ideas.xlsx", "creative_ideas.xlsx")
+  download.file("https://www.oziblue.com/liste_recettes.xlsx", "liste_recettes.xlsx")
+  download.file("https://www.oziblue.com/creative_ideas.xlsx", "creative_ideas.xlsx")
   
   recipes <- read_xlsx("liste_recettes.xlsx")
   ideas   <- read_xlsx("creative_ideas.xlsx")
@@ -129,9 +129,9 @@ server <- function(input, output, session) {
   # Add or remove filenames if your www/images/ folder changes.
   get_image <- reactive({
     c(
-      "rolodex/www/images/016.JPG",
-      "rolodex/www/images/Hand-Colored-Engraving-Of-A-Peony.jpg",
-      "rolodex/www/images/butterflies_merian.png"
+      "https://www.oziblue.com/016.JPG",
+      "https://www.oziblue.com/Hand-Colored-Engraving-Of-A-Peony.jpg",
+      "https://www.oziblue.com/butterflies_merian.png"
     )
   })
   
