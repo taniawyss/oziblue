@@ -212,9 +212,14 @@ server &lt;- function(input, output, session) {
   
   # -------------------- LOAD DATA --------------------
   # In Shinylive, files must be fetched over HTTP into the Wasm virtual filesystem
-  download.file("https://www.oziblue.com/liste_recettes.xlsx", "liste_recettes.xlsx")
-  download.file("https://www.oziblue.com/creative_ideas.xlsx", "creative_ideas.xlsx")
-  
+  download.file(
+  "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/data/liste_recettes.xlsx",
+  "liste_recettes.xlsx"
+)
+download.file(
+  "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/data/creative_ideas.xlsx",
+  "creative_ideas.xlsx"
+)
   recipes &lt;- read_xlsx("liste_recettes.xlsx")
   ideas   &lt;- read_xlsx("creative_ideas.xlsx")
   
@@ -304,16 +309,15 @@ server &lt;- function(input, output, session) {
       )
       
     } else if (mode == "Random Pantone Color") {
-      
-      col &lt;- rgb(runif(1), runif(1), runif(1))
-      tagList(
-        div(style = paste0(
-          "width:200px;height:200px;",
-          "background-color:", col, ";border-radius:10px;"
-        )),
-        h4(col)
-      )
-    }
+  col &lt;- isolate(rgb(runif(1), runif(1), runif(1)))
+  tagList(
+    div(style = paste0(
+      "width:200px;height:200px;",
+      "background-color:", col, ";border-radius:10px;"
+    )),
+    h4(col)
+  )
+}
   })
 }</code></pre>
 
