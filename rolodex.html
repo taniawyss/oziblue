@@ -212,9 +212,14 @@ library(jsonlite)
 server &lt;- function(input, output, session) {
   
   # -------------------- LOAD DATA --------------------
-  # In Shinylive, files must be fetched over HTTP into the Wasm virtual filesystem
-  download.file("https://www.oziblue.com/liste_recettes.xlsx", "liste_recettes.xlsx")
-  download.file("https://www.oziblue.com/creative_ideas.xlsx", "creative_ideas.xlsx")
+  download.file(
+    "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/data/liste_recettes.xlsx",
+    "liste_recettes.xlsx"
+  )
+  download.file(
+    "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/data/creative_ideas.xlsx",
+    "creative_ideas.xlsx"
+  )
   
   recipes &lt;- read_xlsx("liste_recettes.xlsx")
   ideas   &lt;- read_xlsx("creative_ideas.xlsx")
@@ -256,16 +261,13 @@ server &lt;- function(input, output, session) {
   })
   
   # -------------------- IMAGE SAMPLING --------------------
-  # In Shinylive, list.files() cannot scan the filesystem.
-  # Images are served as static URLs — hardcode the list here.
-  # Add or remove filenames if your www/images/ folder changes.
   get_image &lt;- reactive({
-  c(
-    "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/www/images/016.JPG",
-    "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/www/images/Hand-Colored-Engraving-Of-A-Peony.jpg",
-    "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/www/images/butterflies_merian.png"
-  )
-})
+    c(
+      "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/www/images/016.JPG",
+      "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/www/images/Hand-Colored-Engraving-Of-A-Peony.jpg",
+      "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/www/images/butterflies_merian.png"
+    )
+  })
   
   # -------------------- CREATIVE OUTPUT --------------------
   output$creative_output &lt;- renderUI({
@@ -278,46 +280,47 @@ server &lt;- function(input, output, session) {
       imgs &lt;- get_image()
       img  &lt;- sample(imgs, 1)
       
-      # Images are served as static URLs — use src directly, no base64 encoding needed
       tagList(
         tags$img(src = img, style = "max-width:500px;"),
         tags$p(strong("File:"), basename(img))
       )
       
     } else if (mode == "Random Unsplash Image") {
-  
-  unsplash_key &lt;- "9JmLUmuslmpYpBBjZRbg1Nn7FFGY052ySt8XqSS_wtg"
-  
-  url &lt;- paste0(
-    "https://api.unsplash.com/photos/random",
-    "?orientation=landscape",
-    "&amp;client_id=", unsplash_key
-  )
-  
-  result &lt;- tryCatch({
-    con &lt;- url(url)
-    on.exit(close(con))
-    jsonlite::fromJSON(readLines(con, warn = FALSE))
-  }, error = function(e) NULL)
-  
-  if (is.null(result)) {
-    p("Could not load image. Please try again.")
-  } else {
-    img_url    &lt;- result$urls$regular
-    author     &lt;- result$user$name
-    author_url &lt;- result$user$links$html
-    photo_url  &lt;- result$links$html
-    
-    tagList(
-      tags$img(src = img_url, style = "max-width:500px;"),
-      tags$p(
-        "Photo by ",
-        tags$a(href = author_url, author, target = "_blank"),
-        " on ",
-        tags$a(href = photo_url, "Unsplash", target = "_blank")
+      
+      unsplash_key &lt;- "9JmLUmuslmpYpBBjZRbg1Nn7FFGY052ySt8XqSS_wtg"
+      
+      api_url &lt;- paste0(
+        "https://api.unsplash.com/photos/random",
+        "?orientation=landscape",
+        "&amp;client_id=", unsplash_key
       )
-    )
-  } else if (mode == "Random Creative Idea") {
+      
+      result &lt;- tryCatch({
+        con &lt;- url(api_url)
+        on.exit(close(con))
+        jsonlite::fromJSON(readLines(con, warn = FALSE))
+      }, error = function(e) NULL)
+      
+      if (is.null(result)) {
+        p("Could not load image. Please try again.")
+      } else {
+        img_url    &lt;- result$urls$regular
+        author     &lt;- result$user$name
+        author_url &lt;- result$user$links$html
+        photo_url  &lt;- result$links$html
+        
+        tagList(
+          tags$img(src = img_url, style = "max-width:500px;"),
+          tags$p(
+            "Photo by ",
+            tags$a(href = author_url, author, target = "_blank"),
+            " on ",
+            tags$a(href = photo_url, "Unsplash", target = "_blank")
+          )
+        )
+      }
+      
+    } else if (mode == "Random Creative Idea") {
       
       idea &lt;- ideas %&gt;% slice_sample(n = 1)
       tagList(
@@ -326,19 +329,18 @@ server &lt;- function(input, output, session) {
       )
       
     } else if (mode == "Random Pantone Color") {
-  col &lt;- isolate(rgb(runif(1), runif(1), runif(1)))
-  tagList(
-    div(style = paste0(
-      "width:200px;height:200px;",
-      "background-color:", col, ";border-radius:10px;"
-    )),
-    h4(col)
-  )
-}
+      
+      col &lt;- isolate(rgb(runif(1), runif(1), runif(1)))
+      tagList(
+        div(style = paste0(
+          "width:200px;height:200px;",
+          "background-color:", col, ";border-radius:10px;"
+        )),
+        h4(col)
+      )
+    }
   })
-  
-}
-</code></pre>
+}</code></pre>
 
 
 
