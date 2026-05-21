@@ -77,19 +77,15 @@ ui <- navbarPage(
 library(shiny)
 library(openxlsx2)
 library(dplyr)
+library(jsonlite)
 
 server <- function(input, output, session) {
   
   # -------------------- LOAD DATA --------------------
   # In Shinylive, files must be fetched over HTTP into the Wasm virtual filesystem
-  download.file(
-  "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/data/liste_recettes.xlsx",
-  "liste_recettes.xlsx"
-)
-download.file(
-  "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/data/creative_ideas.xlsx",
-  "creative_ideas.xlsx"
-)
+  download.file("https://www.oziblue.com/liste_recettes.xlsx", "liste_recettes.xlsx")
+  download.file("https://www.oziblue.com/creative_ideas.xlsx", "creative_ideas.xlsx")
+  
   recipes <- read_xlsx("liste_recettes.xlsx")
   ideas   <- read_xlsx("creative_ideas.xlsx")
   
@@ -158,9 +154,9 @@ download.file(
         tags$p(strong("File:"), basename(img))
       )
       
-} else if (mode == "Random Unsplash Image") {
+    } else if (mode == "Random Unsplash Image") {
   
-  unsplash_key <- "9JmLUmuslmpYpBBjZRbg1Nn7FFGY052ySt8XqSS_wtg"
+  unsplash_key <- "YOUR_ACCESS_KEY_HERE"
   
   url <- paste0(
     "https://api.unsplash.com/photos/random",
@@ -211,4 +207,5 @@ download.file(
 }
   })
 }
+
 ```
