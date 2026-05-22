@@ -77,7 +77,7 @@ ui <- navbarPage(
 library(shiny)
 library(openxlsx2)
 library(dplyr)
-# library(jsonlite)
+library(jsonlite)
 
 server <- function(input, output, session) {
   
