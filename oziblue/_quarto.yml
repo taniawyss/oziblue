@@ -9,9 +9,11 @@ website:
 #        text: Home
       - href: rencontre.qmd
         text: Rencontre de dessin
+      - text: "Rolodex"
+        href: rolodex.qmd
       - about.qmd
 #      - href: dessin_naturaliste.qmd
-#        text: Dessin naturaliste      
+#        text: Dessin naturaliste    
 
 format:
   html:

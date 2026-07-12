@@ -29,7 +29,7 @@ Une courte introduction de 15 minutes sur le sujet (technique et but) du dessin 
 
 Le dimanche **26 avril 2026** de 14 heures à 17 heures.
 
-[Route de Pré la Pierre 5, CH-1073 Savigny](https://maps.app.goo.gl/kFtYFn3LAFrFh4cz7).
+<!-- [Route de Pré la Pierre 5, CH-1073 Savigny](https://maps.app.goo.gl/kFtYFn3LAFrFh4cz7). -->
 <!-- Près du ruissau entre [Route de Saint-Amour 16 & 18, CH-1073 Savigny](https://maps.app.goo.gl/ZixNXFDWJJVRs91s5) (mise à jour en fonction de la météo le 19 avril 2026). -->
 
 ::: callout-important

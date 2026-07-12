@@ -1,0 +1,243 @@
+---
+title: "Rolodex"
+format:
+  html:
+    page-layout: full
+    embed-resources: false
+    resources:
+      - rolodex/data/liste_recettes.xlsx
+      - rolodex/data/creative_ideas.xlsx
+      - rolodex/www/images/016.JPG
+      - rolodex/www/images/Hand-Colored-Engraving-Of-A-Peony.jpg
+      - rolodex/www/images/butterflies_merian.png
+filters:
+  - shinylive
+---
+
+```{shinylive-r}
+#| standalone: true
+#| viewerHeight: 700
+
+## file: ui.R
+library(shiny)
+
+ui <- navbarPage(
+  title = "Rolodex",
+  
+  # -------------------- PAGE 1: RECIPES --------------------
+  tabPanel(
+    "Recipe Rolodex",
+    sidebarLayout(
+      sidebarPanel(
+        selectInput("course_filter", "Filter by Course",
+                    choices = NULL, selected = "All"),
+        selectInput("country_filter", "Filter by Country",
+                    choices = NULL, selected = "All"),
+        actionButton("random_recipe", "\U0001F3B2 Pick a Random Recipe")
+      ),
+      mainPanel(
+        h3("Selected Recipe"),
+        textOutput("recipe_name"),
+        textOutput("recipe_course"),
+        textOutput("recipe_style"),
+        textOutput("recipe_country"),
+        textOutput("recipe_source"),
+        textOutput("recipe_notes"),
+        uiOutput("recipe_link")
+      )
+    )
+  ),
+  
+  # -------------------- PAGE 2: CREATIVE --------------------
+  tabPanel(
+    "Creative Sampler",
+    sidebarLayout(
+      sidebarPanel(
+        selectInput(
+          "creative_mode",
+          "Creative Mode",
+          choices = c(
+            "Random Image (Default)",
+            "Random Unsplash Image",
+            "Random Creative Idea",
+            "Random Pantone Color"
+          )
+        ),
+        actionButton("random_creative", "\U2728 Surprise Me")
+      ),
+      
+      mainPanel(
+        uiOutput("creative_output")
+      )
+    )
+  )
+)
+
+## file: server.R
+library(shiny)
+library(openxlsx2)
+library(dplyr)
+library(jsonlite)
+
+server <- function(input, output, session) {
+  
+  # -------------------- LOAD DATA --------------------
+  download.file(
+    "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/data/liste_recettes.xlsx",
+    "liste_recettes.xlsx"
+  )
+  download.file(
+    "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/data/creative_ideas.xlsx",
+    "creative_ideas.xlsx"
+  )
+  
+  recipes <- read_xlsx("liste_recettes.xlsx")
+  ideas   <- read_xlsx("creative_ideas.xlsx")
+  
+  # -------------------- FILTERS --------------------
+  updateSelectInput(session, "course_filter",
+                    choices = c("All", sort(unique(recipes$Course))))
+  updateSelectInput(session, "country_filter",
+                    choices = c("All", sort(unique(recipes$Country))))
+  
+  filtered_recipes <- reactive({
+    df <- recipes
+    if (input$course_filter != "All")
+      df <- df %>% filter(Course == input$course_filter)
+    if (input$country_filter != "All")
+      df <- df %>% filter(Country == input$country_filter)
+    df
+  })
+  
+  selected_recipe <- eventReactive(input$random_recipe, {
+    filtered_recipes() %>% slice_sample(n = 1)
+  })
+  
+  output$recipe_name    <- renderText(paste("Recipe:", selected_recipe()$Recettes))
+  output$recipe_course  <- renderText(paste("Course:", selected_recipe()$Course))
+  output$recipe_style   <- renderText(paste("Style:",  selected_recipe()$Style))
+  output$recipe_country <- renderText(paste("Country:", selected_recipe()$Country))
+  output$recipe_source  <- renderText(paste("Source:", selected_recipe()$Source))
+  output$recipe_notes   <- renderText({
+    notes <- selected_recipe()$Notes
+    if (!is.na(notes) && nzchar(notes)) paste("Notes:", notes)
+  })
+  
+  output$recipe_link <- renderUI({
+    url <- selected_recipe()$Link
+    if (!is.na(url) && nzchar(url)) {
+      tags$a(href = url, url, target = "_blank")
+    }
+  })
+  
+  # -------------------- IMAGE SAMPLING --------------------
+  # hard-coded images (works):
+#  get_image <- reactive({
+#   c(
+#     "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/www/images/016.JPG",
+#     "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/www/images/Hand-Colored-Engraving-Of-A-Peony.jpg",
+#     "https://raw.githubusercontent.com/taniawyss/oziblue/main/oziblue/rolodex/www/images/butterflies_merian.png"
+#   )
+# })
+  
+  get_image <- reactive({
+  api_url <- "https://api.github.com/repos/taniawyss/oziblue/contents/oziblue/rolodex/www/images"
+  
+  result <- tryCatch({
+    con <- url(api_url)
+    on.exit(close(con))
+    jsonlite::fromJSON(readLines(con, warn = FALSE))
+  }, error = function(e) NULL)
+  
+  if (is.null(result)) {
+    character(0)
+  } else {
+    result$download_url
+  }
+})
+  
+  # -------------------- CREATIVE OUTPUT --------------------
+  output$creative_output <- renderUI({
+    req(input$random_creative)
+    
+    mode <- input$creative_mode
+    
+    if (mode == "Random Image (Default)") {
+      
+      imgs <- get_image()
+      img  <- sample(imgs, 1)
+      
+      tagList(
+        tags$img(src = img, style = "max-width:500px;"),
+        tags$p(strong("File:"), basename(img))
+      )
+      
+    } else if (mode == "Random Unsplash Image") {
+
+      link <- paste0(
+        "https://source.unsplash.com/featured/800x600?sig=",
+        sample(1:10000, 1)
+      )
+
+      tagList(
+        tags$img(src = link, style = "max-width:500px;"),
+        tags$p(tags$a(href = link, "View on Unsplash", target = "_blank"))
+      )
+      
+  #   } else if (mode == "Random Unsplash Image") {
+  # 
+  # unsplash_key <- "9JmLUmuslmpYpBBjZRbg1Nn7FFGY052ySt8XqSS_wtg"
+  # 
+  # url <- paste0(
+  #   "https://api.unsplash.com/photos/random",
+  #   "?orientation=landscape",
+  #   "&client_id=", unsplash_key
+  # )
+  # 
+  # result <- tryCatch({
+  #   con <- url(url)
+  #   on.exit(close(con))
+  #   jsonlite::fromJSON(readLines(con, warn = FALSE))
+  # }, error = function(e) NULL)
+  # 
+  # if (is.null(result)) {
+  #   p("Could not load image. Please try again.")
+  # 
+  #   } else {
+  #   img_url    <- result$urls$regular
+  #   author     <- result$user$name
+  #   author_url <- result$user$links$html
+  #   photo_url  <- result$links$html
+  #   
+  #   tagList(
+  #     tags$img(src = img_url, style = "max-width:500px;"),
+  #     tags$p(
+  #       "Photo by ",
+  #       tags$a(href = author_url, author, target = "_blank"),
+  #       " on ",
+  #       tags$a(href = photo_url, "Unsplash", target = "_blank")
+  #     )
+  #   )
+      
+    } else if (mode == "Random Creative Idea") {
+      
+      idea <- ideas %>% slice_sample(n = 1)
+      tagList(
+        h3(idea$idea),
+        p(paste("Type:", idea$type))
+      )
+      
+    } else if (mode == "Random Pantone Color") {
+      
+      col <- isolate(rgb(runif(1), runif(1), runif(1)))
+      tagList(
+        div(style = paste0(
+          "width:200px;height:200px;",
+          "background-color:", col, ";border-radius:10px;"
+        )),
+        h4(col)
+      )
+    }
+  })
+}
+```
